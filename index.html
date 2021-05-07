@@ -13,28 +13,32 @@
 
 <body class="body">
     <div class="opacity hidden"></div>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row no-gutters">
-                <div class="col d-flex align-items-center">
-                    <a href="#" class="header__logo">
-                        <picture>
-                            <source srcset="./img/logo-md.svg" media="(min-width: 568px)">
-                            <img src="./img/logo-sm.svg" alt="Some picture">
-                        </picture>
-                    </a>
-                    <h1 class="header__title title min-768-visible">Личный кабинет</h1>
-                    <div class="header__ui d-flex align-items-center ml-auto">
-                        <button class="header__btn btn-sm btn min-768-visible" type="button">Помощь</button>
-                        <img src="./img/avatar-img.png" alt="avatar" class="header__avatar">
-                        <button class="header__menu max-768-visible"></button>
-                    </div>
+    <mainheader><header class="header">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col d-flex align-items-center">
+                <a href="#" class="header__logo">
+                    <picture>
+                        <source srcset="./img/logo-md.svg" media="(min-width: 568px)">
+                        <img src="./img/logo-sm.svg" alt="Some picture">
+                    </picture>
+                </a>
+                <h1 class="header__title title min-768-visible">Личный кабинет</h1>
+                <div class="header__ui d-flex align-items-center ml-auto">
+                    <button class="header__btn btn-sm btn min-768-visible" type="button">Помощь</button>
+                    <img src="./img/avatar-img.png" alt="avatar" class="header__avatar">
+                    <button class="header__menu max-768-visible">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header></mainheader>
     <section class="content d-flex">
-        <div class="sidebar sidebar-hidden" data-folded="false">
+        <sidebar><div class="sidebar sidebar-hidden" data-folded="false">
             <div class="container-fluid">
                 <div class="row no-gutters">
                     <div class="col be-static">
@@ -62,7 +66,11 @@
                                 </li>
                                 <li class="nav__list-item">
                                     <a href="#" class="nav__list-link nav__list-link--active services">
-                                        <svg width="23px" heigth="22px" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg"><path class="nav__list-svg" fill="4E4E4E" d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/><path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/><path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/></svg>
+                                        <svg width="23px" heigth="22px" viewBox="0 -31 512.00026 512" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="nav__list-svg" fill="4E4E4E" d="m164.960938 300.003906h.023437c.019531 0 .039063-.003906.058594-.003906h271.957031c6.695312 0 12.582031-4.441406 14.421875-10.878906l60-210c1.292969-4.527344.386719-9.394532-2.445313-13.152344-2.835937-3.757812-7.269531-5.96875-11.976562-5.96875h-366.632812l-10.722657-48.253906c-1.527343-6.863282-7.613281-11.746094-14.644531-11.746094h-90c-8.285156 0-15 6.714844-15 15s6.714844 15 15 15h77.96875c1.898438 8.550781 51.3125 230.917969 54.15625 243.710938-15.941406 6.929687-27.125 22.824218-27.125 41.289062 0 24.8125 20.1875 45 45 45h272c8.285156 0 15-6.714844 15-15s-6.714844-15-15-15h-272c-8.269531 0-15-6.730469-15-15 0-8.257812 6.707031-14.976562 14.960938-14.996094zm312.152343-210.003906-51.429687 180h-248.652344l-40-180zm0 0"/>
+                                            <path d="m150 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+                                            <path d="m362 405c0 24.8125 20.1875 45 45 45s45-20.1875 45-45-20.1875-45-45-45-45 20.1875-45 45zm45-15c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+                                        </svg>
                                         <span class="nav__link-txt">Дополнительные услуги</span>
                                     </a>
                                 </li>
@@ -126,8 +134,8 @@
                                         <span class="nav__link-txt">Список покупателей</span>
                                     </a>
                                 </li>
-                                <li class="nav__list-item">
-                                    <a href="#" class="nav__list-link instructions">
+                                <li class="nav__list-item nav__list-item--drop">
+                                    <button href="#" class="nav__list-link instructions">
                                         <svg width="21" height="27" viewBox="0 0 21 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path class="nav__list-svg" d="M18.2422 3.02824H14.2195V1.39366C14.2195 1.10086 13.9686 0.85 13.6758 0.85H7.45599C7.1632 0.85 6.91234 1.10086 6.91234 1.39366V3.02824H2.65336C1.65199 3.02824 0.85 3.83023 0.85 4.83161V24.6195C0.85 25.6209 1.65199 26.4229 2.65336 26.4229H18.2685C19.2698 26.4229 20.0718 25.6209 20.0718 24.6195V4.83161H20.0719L20.0718 4.82732C20.0433 3.83011 19.2444 3.02824 18.2422 3.02824ZM7.45599 8.41955H13.6758C13.9686 8.41955 14.2195 8.16869 14.2195 7.8759V6.32004H16.6751V22.9998H4.22053V6.34629H6.91234V7.8759C6.91234 8.20143 7.16985 8.41955 7.45599 8.41955ZM13.1321 1.93732V5.77639V7.33224H7.99965V5.77639V3.54566V1.93732H13.1321ZM18.9583 24.5932C18.9583 24.9828 18.6318 25.3093 18.2422 25.3093H2.65336C2.26382 25.3093 1.93732 24.9828 1.93732 24.5932V4.83161C1.93732 4.44206 2.26382 4.11556 2.65336 4.11556H6.91234V5.25897H3.67688C3.38408 5.25897 3.13322 5.50984 3.13322 5.80263V23.5697C3.13322 23.8625 3.38408 24.1134 3.67688 24.1134H17.2187C17.5115 24.1134 17.7624 23.8625 17.7624 23.5697V5.80263C17.7624 5.50984 17.5115 5.25897 17.2187 5.25897H14.2195V4.11556H18.2422C18.6318 4.11556 18.9583 4.44206 18.9583 4.83161V24.5932Z
                                                    M4.8915 12.7052C4.8915 12.998 5.14237 13.2488 5.43516 13.2488H15.5391C15.8319 13.2488 16.0827 12.998 16.0827 12.7052C16.0827 12.4124 15.8319 12.1615 15.5391 12.1615H5.43516C5.14237 12.1615 4.8915 12.4124 4.8915 12.7052Z
@@ -135,7 +143,20 @@
                                                    M15.5391 17.8031H5.43516C5.14237 17.8031 4.8915 18.054 4.8915 18.3468C4.8915 18.6396 5.14237 18.8904 5.43516 18.8904H15.5391C15.8319 18.8904 16.0827 18.6396 16.0827 18.3468C16.0827 18.054 15.8319 17.8031 15.5391 17.8031Z" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.3"/>
                                         </svg>
                                         <span class="nav__link-txt">Инструкции</span>
-                                    </a>
+                                        <svg class="instructions-svg" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect class="nav__list-svg" x="13.3247" y="1.84082" width="8.81723" height="1.68818" rx="0.844088" transform="rotate(135 13.3247 1.84082)" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.5"/>
+                                            <rect class="nav__list-svg" x="1.84009" y="0.646447" width="8.81723" height="1.68818" rx="0.844088" transform="rotate(45 1.84009 0.646447)" fill="#4E4E4E" stroke="#4E4E4E" stroke-width="0.5"/>
+                                        </svg>    
+                                    </button>
+                                    <div class="nav__drop-down drop-down" data-show="false">
+                                        <ul class="drop-down__list">
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Советы</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Настройки</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю1</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю2</a></li>
+                                            <li class="drop-down__list-item"><a class="drop-down__list-link" href="$">Подменю3</a></li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                             <button class="nav__expand-btn">
@@ -161,8 +182,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div></sidebar>
         <main class="main w-100">
+            <p class="current-page max-768-visible">Дополнительные услуги</p>
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
                     <div class="col-sm-12 col-xxl-9">
@@ -187,6 +209,31 @@
                                             <form action="" class="card__form">
                                                 <input class="card__form-checkbox" type="checkbox" id="custom" name="custom">
                                                 <label class="card__form-label" for="custom"></label>
+                                                <button class="card__form-btn btn-md btn" type="button" data-toggle="modal" data-target="#exampleModalCenter">Заказать</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 shadow card mt-4 mt-md-5">
+                                <div class="row shadow h-100">
+                                    <div class="col-xl-5 bordered d-flex flex-column justify-content-center">
+                                        <div class="p-3">
+                                            <p class="card__descr">Составление экспертного юридического заключения об
+                                                объекте.</p>
+                                            <a href="$" class="card__link link">Подробнее об экспертном заключении</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 bordered d-flex align-items-center">
+                                        <div class="p-3">
+                                            <p class="card__price">Стоимость: 1190₽</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 d-flex align-items-center">
+                                        <div class="p-3">
+                                            <form action="" class="card__form">
+                                                <input class="card__form-checkbox" type="checkbox" id="custom1" name="custom1">
+                                                <label class="card__form-label" for="custom1"></label>
                                                 <button class="card__form-btn btn-md btn">Заказать</button>
                                             </form>
                                         </div>
@@ -210,8 +257,8 @@
                                     <div class="col-xl-4 d-flex align-items-center">
                                         <div class="p-3">
                                             <form action="" class="card__form">
-                                                <input class="card__form-checkbox" type="checkbox" id="custom" name="custom">
-                                                <label class="card__form-label" for="custom"></label>
+                                                <input class="card__form-checkbox" type="checkbox" id="custom2" name="custom2">
+                                                <label class="card__form-label" for="custom2"></label>
                                                 <button class="card__form-btn btn-md btn">Заказать</button>
                                             </form>
                                         </div>
@@ -235,33 +282,8 @@
                                     <div class="col-xl-4 d-flex align-items-center">
                                         <div class="p-3">
                                             <form action="" class="card__form">
-                                                <input class="card__form-checkbox" type="checkbox" id="custom" name="custom">
-                                                <label class="card__form-label" for="custom"></label>
-                                                <button class="card__form-btn btn-md btn">Заказать</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 shadow card mt-4 mt-md-5">
-                                <div class="row shadow h-100">
-                                    <div class="col-xl-5 bordered d-flex flex-column justify-content-center">
-                                        <div class="p-3">
-                                            <p class="card__descr">Составление экспертного юридического заключения об
-                                                объекте.</p>
-                                            <a href="$" class="card__link link">Подробнее об экспертном заключении</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 bordered d-flex align-items-center">
-                                        <div class="p-3">
-                                            <p class="card__price">Стоимость: 1190₽</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 d-flex align-items-center">
-                                        <div class="p-3">
-                                            <form action="" class="card__form">
-                                                <input class="card__form-checkbox" type="checkbox" id="custom" name="custom">
-                                                <label class="card__form-label" for="custom"></label>
+                                                <input class="card__form-checkbox" type="checkbox" id="custom3" name="custom3">
+                                                <label class="card__form-label" for="custom3"></label>
                                                 <button class="card__form-btn btn-md btn">Заказать</button>
                                             </form>
                                         </div>
@@ -285,8 +307,8 @@
                                     <div class="col-xl-4 d-flex align-items-center">
                                         <div class="p-3">
                                             <form action="" class="card__form">
-                                                <input class="card__form-checkbox" type="checkbox" id="custom" name="custom">
-                                                <label class="card__form-label" for="custom"></label>
+                                                <input class="card__form-checkbox" type="checkbox" id="custom4" name="custom4">
+                                                <label class="card__form-label" for="custom4"></label>
                                                 <button class="card__form-btn btn-md btn">Заказать</button>
                                             </form>
                                         </div>
@@ -323,33 +345,79 @@
             </div>
         </main>
     </section>
-    <footer class="footer">
-        <div class="container-md p-0">
-            <div class="row no-gutters">
-                <div class="col-6 col-md-9 d-flex flex-column">
-                    <p>© BuyBuyHouse, 2021</p>
-                    <ul class="footer__list">
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Контакты</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Вакансии</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Правила пользования
-                                сайтом</a></li>
-                        <li class="footer__list-item"><a href="$" class="footer__list-link">Политика
-                                конфиденциальности</a></li>
-                    </ul>
-                    <p class="footer__license">При использовании материалов гиперссылка обязательна.</p>
+    <mainfooter><footer class="footer">
+    <div class="container-md">
+        <div class="row no-gutters">
+            <div class="col-6 col-md-9 d-flex flex-column">
+                <p>© BuyBuyHouse, 2021</p>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Контакты</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Вакансии</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Правила пользования
+                            сайтом</a></li>
+                    <li class="footer__list-item"><a href="$" class="footer__list-link">Политика
+                            конфиденциальности</a></li>
+                </ul>
+                <p class="footer__license">При использовании материалов гиперссылка обязательна.</p>
+            </div>
+            <div class="col-6 col-md-3 d-flex justify-content-around">
+                <ul class="social-list d-flex align-items-center align-items-sm-start">
+                    <li class="social-list__item"><a href="$" class="social-list__link vk"></a></li>
+                    <li class="social-list__item"><a href="$" class="social-list__link facebook"></a></li>
+                    <li class="social-list__item"><a href="$" class="social-list__link youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer></mainfooter>
+
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="order-modal modal-dialog modal-dialog-centered" role="document">
+            <div class="order-modal__content modal-content w-100 p-3 relative">
+                <div class="order-modal__header">
+                    <p class="order-modal__title">Добрый день, Дизайнер!</p>
+                    <p class="order-modal__header-txt">Пожалуйста, подтвердите интересующую Вас услугу и контактные
+                        данные.
+                        После отправки запроса, мы перезвоним в течении одного часа. Спасибо. </p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-6 col-md-3 d-flex justify-content-around">
-                    <ul class="social-list d-flex align-items-center align-items-sm-start">
-                        <li class="social-list__item"><a href="$" class="social-list__link vk"></a></li>
-                        <li class="social-list__item"><a href="$" class="social-list__link facebook"></a></li>
-                        <li class="social-list__item"><a href="$" class="social-list__link youtube"></a></li>
-                    </ul>
+                <div class="order-modal__body container">
+                    <div class="row justify-content-between align-items-center no-gutters">
+                        <div class="col-6 order-modal__txt">
+                            Дополнительное продвижение на сайтах Агрегаторах<br>
+
+                            ЦИАН — поднятие в ТОП на 7 дней<br>
+                            Авито — Поднятие 2 раза в неделю<br>
+                            Яндекс.Недвижимость — Поднятие 2 раза в неделю<br>
+                            <a href="" class="order-modal__link link">+ еще 2</a>
+                        </div>
+                        <div class="col-5 order-modal__price d-flex align-items-center justify-content-center">
+                            Стоимость: 1190₽
+                        </div>
+                    </div>
+                    <div class="row no-gutters mt-2rem justify-content-between align-items-center">
+                        <div class="col-6 order-modal__paid-sevices">Интересуют ли Вас другие платные услуги?</div>
+                        <div class="col-5">
+                            <button class="order-modal__btn">Да</button>
+                            <button class="order-modal__btn">Нет</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-modal__footer">
+                    <p>Телефон для связи: +7 (903) 548-50-53 <a href="$" class="order-modal__footer-link link">[редактировать]</a></p>
+                    <p>Имя: Дизайн Дизайнович  <a href="$" class="order-modal__footer-link link">[редактировать]</a></p>
+                    <button class="order-modal__confirm-btn">Подтвердить</button>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/bundle.js"></script></body>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/bundle.js"></script></body>
 
 </html>
